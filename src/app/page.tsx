@@ -15,12 +15,15 @@ export default function Home() {
       />
 
       <h2 className="py-20 flex space-x-8 ">
-        <Link href="/about/page.tsx" className="no-underline hover:underline">
+        <Link
+          href="/about/page.tsx"
+          className="no-underline hover:underline hover:uppercase"
+        >
           About
         </Link>
         <Link
           href="https://i.imgflip.com/5c3y7l.gif"
-          className="no-underline hover:underline"
+          className="no-underline hover:underline hover:uppercase"
         >
           Dom's Secret
         </Link>
