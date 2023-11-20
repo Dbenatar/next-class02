@@ -1,113 +1,88 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gray-700">
+      <h1 className="bg-gray-300 rounded-sm underline decoration-wavy underline-offset-8 decoration-4 decoration-lime-500 ">
+        Dom is learning tailwind
+      </h1>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <img
+        className="py-10 opacity-50"
+        src="https://assets3.thrillist.com/v1/image/2778887/size/gn-gift_guide_variable_c.jpg"
+        alt="Hans Gruber"
+      />
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+      <h2 className="py-20 px-8">
+        <Link href="/pages/About" className="no-underline hover:underline">
+          About
+        </Link>
+        <Link
+          href="https://i.imgflip.com/5c3y7l.gif"
+          className="no-underline hover:underline"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          Dom's Secret
+        </Link>
+      </h2>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <p className="">
+        I can see the benfit to using tailwind or CSS fart as I will call it.
+        For now it is feeling really alien.
+        <br />
+        <br />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+        repellendus asperiores nulla sunt expedita doloribus molestias molestiae
+        odit, laboriosam quos, fugit fuga! Quaerat facere quisquam error
+        consequuntur mollitia incidunt molestias? Commodi, praesentium officiis
+        quo odio nisi saepe est voluptatem placeat, architecto repudiandae at
+        repellendus doloribus dolorem non ratione sit delectus doloremque libero
+        quae id ipsa distinctio. Quos, ipsam. Officiis, deleniti. Aperiam
+        adipisci est ipsum minus magnam repellendus rerum. Laborum maiores quae
+        atque numquam reiciendis molestiae cupiditate ut. Asperiores earum autem
+        doloribus corporis dolores magnam, eum, nam ex quaerat molestiae ut.
+        Nihil, repellat ipsum, totam porro quis magnam sunt fugit provident
+        praesentium quia consectetur minima eius quisquam tempora cupiditate
+        placeat eos laboriosam incidunt aspernatur cum ea deserunt ratione.
+        Quod, alias inventore? Dolor pariatur perspiciatis est fugiat quos unde
+        voluptas magnam, sint earum quis enim nostrum vero sequi! Error libero
+        unde quia, accusantium vel cupiditate esse saepe dicta adipisci
+        obcaecati odit voluptatum. Placeat maiores accusantium, ad maxime
+        tempore velit porro commodi ipsa, illo corrupti numquam eos repellat cum
+        pariatur nesciunt veritatis? Ipsum soluta consequuntur nihil! Eaque
+        veritatis illum, pariatur vitae hic placeat. Perspiciatis iure expedita
+        reiciendis earum unde, magni explicabo laborum accusamus odit illo quas
+        nam vero accusantium quia iusto, aliquid fugit officia! Necessitatibus
+        qui ea sit, illum quidem debitis doloremque exercitationem! Ab
+        reiciendis officia qui, placeat dolores ullam enim earum aliquid
+        quibusdam sapiente omnis id vitae asperiores quaerat fuga eum rem
+        architecto iure illum voluptas dolor nesciunt nisi distinctio neque?
+        Deleniti? Quas omnis quia corrupti sequi? Ad est rerum illo suscipit
+        eveniet aspernatur sequi consectetur doloremque architecto neque,
+        aperiam impedit praesentium laboriosam earum, perspiciatis pariatur
+        beatae expedita necessitatibus sint itaque. Libero. Reiciendis ad
+        officiis nihil expedita nobis dolorem sequi repellat soluta, harum hic
+        sit inventore itaque enim sed reprehenderit dolore consequuntur? Eos
+        numquam quas mollitia corrupti ad fuga deleniti facilis in? Molestias
+        cumque, perspiciatis voluptate officiis quia quod exercitationem sunt
+        obcaecati, amet perferendis soluta eos doloribus! Possimus qui
+        voluptatibus, iste ratione adipisci iusto quam, natus quos omnis sed
+        similique numquam deserunt. Totam quisquam porro, distinctio sit animi,
+        veniam iste exercitationem facilis pariatur beatae saepe dicta tempora,
+        provident aperiam perferendis. Laborum voluptatum velit natus nobis rem
+        unde voluptatibus asperiores illum explicabo necessitatibus? Doloremque
+        mollitia corrupti saepe blanditiis quam voluptas natus consequatur
+        maxime maiores animi distinctio harum, ut aliquid tenetur facere totam,
+        ipsam possimus atque inventore suscipit obcaecati tempore. Nobis
+        consequuntur quis accusantium! Labore nobis atque exercitationem
+        obcaecati. Possimus cumque sunt quasi necessitatibus nostrum dolorum
+        labore totam fuga officia perferendis aliquam nulla culpa, accusantium
+        similique! Est, nulla voluptatibus laborum inventore tenetur placeat
+        maxime! Illo libero labore quis beatae. Obcaecati nesciunt culpa
+        asperiores consectetur et dolor sapiente odit mollitia quasi quibusdam
+        molestias, aperiam, ad temporibus necessitatibus vero expedita qui
+        dignissimos fuga neque labore. Hic!
+      </p>
     </main>
-  )
+  );
 }
