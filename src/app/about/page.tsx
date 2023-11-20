@@ -5,8 +5,8 @@ import React from "react";
 export default function About({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <Link href="/"></Link>
-      <h1 className="text-center">All About Dom</h1>
+      <Link href="/about"></Link>
+      <p className="text-center">All About Dom</p>
     </div>
   );
 }

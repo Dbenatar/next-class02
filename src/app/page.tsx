@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gray-700">
-      <h1 className="bg-gray-300 rounded-sm underline decoration-wavy underline-offset-8 decoration-4 decoration-lime-500 ">
+      <h1 className="bg-gray-300 rounded-sm underline decoration-wavy underline-offset-8 decoration-4 decoration-lime-500 p-8 rounded-md">
         Dom is learning tailwind
       </h1>
 
@@ -14,8 +14,8 @@ export default function Home() {
         alt="Hans Gruber"
       />
 
-      <h2 className="py-20 px-8">
-        <Link href="/pages/About" className="no-underline hover:underline">
+      <h2 className="py-20 flex space-x-8 ">
+        <Link href="/about/page.tsx" className="no-underline hover:underline">
           About
         </Link>
         <Link
