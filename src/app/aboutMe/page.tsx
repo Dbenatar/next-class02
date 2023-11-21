@@ -1,4 +1,10 @@
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Dom Blog",
+  description: "A list of Doms hobbies",
+};
 
 type aboutSearchQuery = {
   sortBy: string;
@@ -32,10 +38,12 @@ export default function Page({
 }: {
   searchParams: aboutSearchQuery;
 }) {
+  let sortedAbout = [...about];
+
   if (searchParams.sortBy == "asc") {
-    about.sort(compareAbout);
+    sortedAbout.sort(compareAbout);
   } else if (searchParams.sortBy == "desc") {
-    about.sort(compareAbout).reverse();
+    sortedAbout.sort(compareAbout).reverse();
   }
 
   return (
@@ -50,7 +58,7 @@ export default function Page({
       <Link href="/aboutMe?sortBy=desc">Descending Order</Link>
 
       <p className="text-center p-10 m-6">General Interests</p>
-      {about.map((about) => {
+      {sortedAbout.map((about) => {
         return (
           <div key={about.id}>
             <Link href={`/aboutMe/${about.name.toLowerCase()}`}>
