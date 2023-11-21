@@ -16,7 +16,7 @@ export default function Home() {
 
       <h2 className="py-20 flex space-x-8 ">
         <Link
-          href="/aboutMe/page.tsx"
+          href="/aboutMe"
           className="no-underline hover:underline hover:uppercase"
         >
           About
