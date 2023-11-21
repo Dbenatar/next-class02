@@ -1,12 +1,12 @@
 import Link from "next/link";
-import About from "../about/page";
+import About from "../aboutMe/page";
 
 export default function Header() {
   return (
     <>
-      <header className="text-lime-500 p-8">
+      <header className="text-lime-500 p-8 text-lg">
         About Dom
-        <Link href={"./about/"} />
+        <Link href={"./aboutMe"} />
       </header>
     </>
   );
