@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Quicksand } from "next/font/google";
+import { Inter, Quicksand, Advent_Pro } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -7,6 +7,7 @@ import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 const quicksand = Quicksand({ subsets: ["latin"] });
+const advent = Advent_Pro({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Doms about page",
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${quicksand.className} flex min-h-screen flex-col items-center justify-between p-24 bg-gray-700`}
+        className={`${advent.className} flex min-h-screen flex-col items-center justify-between p-24 bg-gray-700`}
       >
         <Image
           src="/taco-unsplash.jpg"
