@@ -21,19 +21,19 @@ export default function Header() {
 
         <nav>
           <ul>
-            <Link href="/aboutMe">
+            <Link href="/aboutMe/cooking">
               <li>Cooking</li>
             </Link>
-            <Link href="/aboutMe">
+            <Link href="/aboutMe/running">
               <li>Running</li>
             </Link>
-            <Link href="/aboutMe">
+            <Link href="/aboutMe/strength">
               <li>Strength Training</li>
             </Link>
-            <Link href="/aboutMe">
+            <Link href="/aboutMe/gaming">
               <li>Gaming</li>
             </Link>
-            <Link href="/aboutMe">
+            <Link href="/aboutMe/music">
               <li>Music</li>
             </Link>
           </ul>
