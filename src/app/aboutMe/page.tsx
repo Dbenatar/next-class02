@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import GlassCard from "@/app/components/GlassCard";
 
 export const metadata: Metadata = {
   title: "About Dom Blog",
@@ -57,8 +58,12 @@ export default function Page({
       <br />
       <Link href="/aboutMe?sortBy=desc">Descending Order</Link>
 
-      <p className="text-center p-10 m-6">General Interests</p>
-      {sortedAbout.map((about) => {
+      <p className="text-center p-10 m-6 underline">General Interests</p>
+
+      <div className="p-8 flex">
+        <GlassCard />
+      </div>
+      {/* {sortedAbout.map((about) => {
         return (
           <div key={about.id}>
             <Link href={`/aboutMe/${about.name.toLowerCase()}`}>
@@ -66,14 +71,8 @@ export default function Page({
             </Link>
           </div>
         );
-      })}
-      {/* <ul className="text-center">
-        <li>Cooking</li>
-        <li>Running</li>
-        <li>Strength Training</li>
-        <li>Gaming</li>
-        <li>Music</li>
-      </ul> */}
+      })} */}
+
       <Link className="" href="/">
         Go Home
       </Link>

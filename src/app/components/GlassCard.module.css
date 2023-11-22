@@ -1,0 +1,13 @@
+.glasscard {
+  display: flexbox;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.glasseffect {
+  background: rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 0.4);
+  border: 1px lime solid;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
